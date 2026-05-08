@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-orange-50 via-white to-purple-50 text-gray-800 font-sans min-h-screen antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-gray-200 rounded-2xl p-6 shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.12)] transition-shadow duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-violet-500/30 hover:shadow-violet-500/40 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium px-5 py-3 rounded-xl transition-all duration-200 border border-gray-300 hover:-translate-y-0.5;
+  }
+
+  .btn-danger {
+    @apply bg-red-50 hover:bg-red-100 text-red-600 font-medium px-5 py-3 rounded-xl transition-all duration-200 border border-red-200;
+  }
+
+  .input-field {
+    @apply w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-3 text-gray-800 placeholder-gray-400 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 focus:bg-white transition-all shadow-sm;
+  }
+
+  .select-field {
+    @apply w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-3 text-gray-800 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 focus:bg-white transition-all cursor-pointer appearance-none shadow-sm;
+  }
+
+  .score-badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-semibold;
+  }
+}
