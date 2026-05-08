@@ -6,7 +6,7 @@ import QuestionCard from "./components/QuestionCard";
 import FeedbackPanel from "./components/FeedbackPanel";
 import FinalReport from "./components/FinalReport";
 
-const API_BASE = "backend-ahg6qip4k-abulabbas786s-projects.vercel.app/api";
+const API_BASE = "http://localhost:5001/api";
 
 function App() {
   // App state
